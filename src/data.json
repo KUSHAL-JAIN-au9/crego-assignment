@@ -1,0 +1,29 @@
+{
+  "rules": [
+    {
+      "key": "age",
+      "output": {
+        "value": 60,
+        "operator": ">=",
+        "score": 50
+      }
+    },
+    {
+      "key": "age",
+      "output": {
+        "value": 40,
+        "operator": ">=",
+        "score": 100
+      }
+    },
+    {
+      "key": "account_balance",
+      "output": {
+        "value": 100000,
+        "operator": ">=",
+        "score": 200
+      }
+    }
+  ],
+  "combinator": "and"
+}
