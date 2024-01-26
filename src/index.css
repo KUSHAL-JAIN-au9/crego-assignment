@@ -1,1 +1,91 @@
+:root {
+  background: rgb(62, 16, 120);
+  background: linear-gradient(
+    90deg,
+    rgba(62, 16, 120, 1) 52%,
+    rgba(69, 179, 191, 0.9429971817828694) 100%
+  );
+}
 
+.main {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  background: rgb(62, 16, 120);
+  background: linear-gradient(
+    90deg,
+    rgba(62, 16, 120, 1) 52%,
+    rgba(69, 179, 191, 0.9429971817828694) 100%
+  );
+}
+
+.form-container {
+  height: 34rem;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  padding: 10px;
+  backdrop-filter: blur(50px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.main input,
+.main input:focus,
+.main select {
+  color: white;
+  background-color: #3e1078;
+  border: none !important;
+}
+
+input::placeholder {
+  color: #999; /* Placeholder text color */
+}
+
+.form-input::placeholder {
+  color: #999 !important;
+}
+
+/* Style the selected option */
+.select-arrow {
+  background-color: #3e1078 !important;
+  color: white !important;
+}
+
+.select-arrow {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-color: transparent;
+  background-image: url('data:image/svg+xml;utf8,<svg fill="%234CAF50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7 10l5 5 5-5z"/></svg>');
+  background-repeat: no-repeat;
+  background-position: right 0.7em top 50%, 0 0;
+  padding: 8px; /* You can adjust the padding as needed */
+  border: 1px solid #ced4da; /* You can adjust the border styles as needed */
+}
+
+.btn:disabled {
+  pointer-events: auto !important;
+  cursor: not-allowed !important;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #3e1078;
+  border-radius: 12px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #3e1078;
+}
